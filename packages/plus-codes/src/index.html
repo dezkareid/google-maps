@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plus Codes</title>
+    <link rel="stylesheet" href="bundle.css">
+    <script async defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/openlocationcode/1.0.3/openlocationcode.min.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_KEY&libraries=places">
+    </script>
+  </head>
+  <body class="app">
+    <section class="app__details">
+        <section class="container">
+            <p class="plus-code">Click in map to get plus code</p>
+        </section>
+        <section class="container">
+            <form class="form search">
+                <div class="form__field">
+                    <label for="search" class="search__label">Search Your Plus Code</label>
+                    <input class="search__input" id="search" name="search" type="text">
+                </div>
+                <div class="form__submit">
+                    <button class="button search__button">Find location</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <div class="app__map"></div>
+  </body>
+</html>

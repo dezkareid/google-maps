@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: rgb(218, 214, 235);
+    font-size: 20px;
+    height: 100%;
+}
+
+.app {
+    background-color: white;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.app__map {
+    background-color: grey;
+    height: 100%;
+}
+
+.button {
+    background-color: lightblue;
+    border-radius: 0.3rem;
+    font-size: inherit;
+    padding: 0.3rem;
+    cursor: pointer;
+    
+}
+
+.container {
+    padding: 0.4rem 0.8rem;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.form__submit {
+    padding: 0.3rem 0;
+    text-align: center;
+}
+
+.plus-code {
+    margin: 0;
+    text-align: center;
+}
+
+.search__input {
+    border: 0.1rem solid lightgray;
+    border-radius: 0.25rem;
+    font-size: inherit;
+    margin: 0.5rem 0;
+    min-width: 80%;
+    padding: 0.4rem 0.2rem;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px){
+    html {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .app {
+        flex-direction: row;
+    }
+    .app__details {
+        width: 30%;
+    }
+    .app__map {
+        width: 70%;
+    }
+
+    .search__input {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Context API</title>
+    <link rel="stylesheet" href="bundle.css">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_KEY&libraries=localContext,places&v=beta">
+    </script>
+  </head>
+  <body class="app">
+    <section class="app__search">
+      <div class="search">
+        <label for="search" class="search__label">Search A Place</label>
+        <input class="search__input" id="search" name="search" type="text">
+      </div>
+    </section>
+    <div class="app__map"></div>
+  </body>
+</html>
